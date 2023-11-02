@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@font-face {
+  font-family: "SuperMario";
+  src: url("assets/fonts/SuperMarioBros.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  /* background: linear-gradient(
+    to bottom,
+    rgb(139, 139, 139),
+    rgb(188, 216, 248)
+  ); */
+  background: linear-gradient(
+    to bottom,
+    rgb(188, 216, 248),
+    rgb(188, 216, 248)
+  );
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

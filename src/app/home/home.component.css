@@ -1,0 +1,12 @@
+.circle-img {
+  height: 350px;
+  width: 300px;
+  border-radius: 50%;
+  display: inline;
+}
+
+.element {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

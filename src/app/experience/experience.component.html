@@ -1,0 +1,15 @@
+<div class="mx-auto" style="margin-top: 6.5rem; width: 80%; margin-bottom: 2rem;">
+    <p-timeline [value]="experiences" align="alternate" styleClass="customized-timeline">
+        <ng-template pTemplate="marker" let-experience>
+            <img src="{{experience.icon}}">
+        </ng-template>
+        <ng-template pTemplate="content" let-experience>
+            <p-card [header]="experience.name" [subheader]="experience.title">
+                <img *ngIf="experience.image" [src]="experience.image" [alt]="experience.name" width="200" class="shadow-2 mb-2" style="display: block; margin-left: auto; margin-right: auto;" />
+                <p>{{experience.startDate}} - {{experience.endDate}}</p>
+                <p>{{experience.description}}</p>
+                <button pButton label="Read more" class="p-button-text"></button>
+            </p-card>
+        </ng-template>
+    </p-timeline>
+</div>

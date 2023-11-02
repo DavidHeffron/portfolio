@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'portfolio';
+
+  downloadMyFile(){
+    const link = document.createElement('a');
+    link.setAttribute('target', '_blank');
+    link.setAttribute('href', 'assets/David_Heffron_Resume.pdf');
+    link.setAttribute('download', `DavidHeffronResume.pdf`);
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+}
+
 }
