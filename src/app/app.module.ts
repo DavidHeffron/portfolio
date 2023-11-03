@@ -15,8 +15,7 @@ import { TimelineModule } from 'primeng/timeline';
 import { ExperienceComponent } from './experience/experience.component';
 import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
-
-
+import { CarouselModule } from 'primeng/carousel';
 
 @NgModule({
   declarations: [
@@ -36,6 +35,7 @@ import { ButtonModule } from 'primeng/button';
     TimelineModule,
     CardModule,
     ButtonModule,
+    CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

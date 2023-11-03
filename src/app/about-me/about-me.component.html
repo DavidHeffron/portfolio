@@ -1,1 +1,45 @@
-<p>about-me works!</p>
+<div style="width: 98%; display: inline-flex; margin-top: 6.5rem;">
+    <div class="row mx-auto">
+        <div class="col-lg-6" style="margin-left: 2rem;">
+            <h2 style="font-family: SuperMario;">Background</h2>
+            <p style="font-size: 15px;">
+                From a young age, I exhibited a keen interest in computers that set me on a 
+                path of technological exploration. Growing up, I was the go-to person in my 
+                family and circle of friends for troubleshooting computer issues. My fascination 
+                with the inner workings of these machines was evident as I eagerly delved into 
+                programming and coding, teaching myself the basics of various programming languages.
+            </p>
+            <p style="font-size: 15px;">
+                As I entered college, my passion for computers and software development only 
+                intensified. I pursued a degree in computer science and found myself immersed 
+                in a world of algorithms, data structures, and software engineering. The process of 
+                creating software, whether it was a simple program or a complex application, became 
+                a source of joy and fulfillment.
+            </p>
+            <p style="font-size: 15px;">
+                My experiences in college not only solidified my love for software development 
+                but also opened doors to exciting opportunities, and collaborations with like-minded 
+                individuals who shared the passion for technology. With each line of code I wrote,
+                I knew I was forging a path towards a promising career in the world of software 
+                development, where my childhood fascination had grown into a professional calling.
+            </p>
+        </div>
+        <div class="col mx-auto" style="margin-top: 2rem; max-width: 30rem;">
+            <!-- [responsiveOptions]="responsiveOptions" -->
+            <p-carousel [value]="images" [numVisible]="1" [numScroll]="1" [circular]="true"  [autoplayInterval]="autoplay"> 
+                <ng-template let-image pTemplate="item">
+                    <div class="product-item">
+                        <div class="product-item-content">
+                            <div class="mb-3 text-center">
+                                <img [src]="image.src" height="333px"  width="250px" alt="picture" class="product-image" />
+                            </div>
+                            <div class="p-carousel-footer text-center">
+                                <span>{{image.description}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </p-carousel>            
+        </div>
+    </div>
+</div>
