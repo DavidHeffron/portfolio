@@ -1,3 +1,4 @@
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,6 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  constructor(private snackBar: MatSnackBar){}
+
   downloadMyFile(){
     const link = document.createElement('a');
     link.setAttribute('target', '_blank');
@@ -15,6 +18,13 @@ export class AppComponent {
     document.body.appendChild(link);
     link.click();
     link.remove();
-}
+    this.openSnackBar('Downloaded David\'s Resume.', 'Close')
+  }
+
+  openSnackBar(message: string, action: string) {
+    this.snackBar.open(message, action, {
+      duration: 2000,
+    });
+  }
 
 }
