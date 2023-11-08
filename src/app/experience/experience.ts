@@ -6,5 +6,5 @@ export interface Experience {
     name: string;
     description?: string;
     icon: string;
-    longDescription: string;
+    descriptionPoints: string[];
 }

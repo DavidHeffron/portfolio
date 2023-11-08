@@ -1,7 +1,12 @@
-<h1 mat-dialog-title class="text-center">{{data.experience.name}}</h1>
-<div mat-dialog-content>
-  <p>{{data.name}}</p>
-</div>
-<div mat-dialog-actions>
-  <button mat-button cdkFocusInitial>Done</button>
+<div style="width: 30rem; margin-top: 2rem; z-index: 500 !important;">
+  <div mat-dialog-content style="color:rgb(255, 255, 255);">
+    <h1 class="text-center mb-4">{{data.experience.name}}</h1>
+
+    <ul>
+      <li *ngFor="let point of data.experience.descriptionPoints" style="margin-bottom: 1rem;">{{point}}</li>
+    </ul>
+  </div>
+  <div mat-dialog-actions>
+    <button class="mx-auto" mat-button cdkFocusInitial [mat-dialog-close]="false">Done</button>
+  </div>
 </div>

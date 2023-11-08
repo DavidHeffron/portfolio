@@ -1,0 +1,4 @@
+.dialog-backdrop {
+  z-index: 500 !important;
+  background-color: rgb(114, 20, 20);
+}
