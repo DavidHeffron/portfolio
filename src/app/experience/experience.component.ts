@@ -34,10 +34,11 @@ export class ExperienceComponent {
       ]
       },
       {name: 'L3 Harris', startDate: 'July 2023', endDate: 'Current', image: 'assets/images/L3Harris.png', title: 'Associate Software Engineer', icon: 'assets/images/workIcon.png',
-      description: 'At L3 Harris, I am helping develop an Angular app to construct a comprehensive catalog of company metadata, aimed at driving efficiency and substantial cost savings. This innovative application will streamline the management and accessibility of critical data, fostering better collaboration and data consistency, which will result in significant savings while enhancing operational effectiveness.',
+      description: 'At L3 Harris, I am helping develop an Angular app and C# .net API to construct a comprehensive catalog of company metadata, aimed at driving efficiency and substantial cost savings. This innovative application will streamline the management and accessibility of critical data, fostering better collaboration and data consistency, which will result in significant savings while enhancing operational effectiveness.',
       descriptionPoints: [
         'Utilized Angular framework to create a dynamic and responsive web application, enhancing user interaction and data visualization.',
         'Worked on enhancing user interfaces and improving user experience through Angular components, services, and modules.',
+        'Collaboratively assisted in the growth of our C# REST API by architecting and implementing new endpoints, enhancing the functionality and versatility of our application.',
         'Implemented best practices in software development, including version control, code reviews, and testing procedures to ensure high-quality code.',
         'Participated in agile development methodologies to adapt to changing project requirements and ensure project success.',
         'Contributed to solving technical challenges and optimizing application performance, working with a team of dedicated professionals.',

@@ -8,6 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  public isCollapsed : boolean = true;
+
+
   constructor(private snackBar: MatSnackBar){}
 
   downloadMyFile(){
